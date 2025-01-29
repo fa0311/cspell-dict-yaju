@@ -2,10 +2,6 @@
   "name": "cspell-dict-yaju",
   "version": "0.0.1",
   "description": "淫夢語録をブロックするスペルチェック用辞書",
-  "publishConfig": {
-    "access": "public",
-    "provenance": true
-  },
   "exports": {
     ".": "./cspell-ext.json",
     "./cspell": "./cspell-ext.json",
