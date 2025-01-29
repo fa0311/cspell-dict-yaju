@@ -1,0 +1,13 @@
+{
+  "id": "yaju",
+  "name": "淫夢語録",
+  "description": "淫夢語録をブロックするスペルチェック用辞書",
+  "readonly": true,
+  "dictionaryDefinitions": [
+    {
+      "name": "yaju",
+      "path": "./dist/yaju.txt",
+      "description": "淫夢語録をブロックするスペルチェック用辞書"
+    }
+  ]
+}

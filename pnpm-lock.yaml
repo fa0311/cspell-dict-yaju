@@ -1,0 +1,54 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@types/moji':
+        specifier: ^0.5.3
+        version: 0.5.3
+      '@types/node':
+        specifier: ^22.12.0
+        version: 22.12.0
+    devDependencies:
+      moji:
+        specifier: ^0.5.1
+        version: 0.5.1
+
+packages:
+
+  '@types/moji@0.5.3':
+    resolution: {integrity: sha512-x0qWIflmLQkob4rmSEjeHoEFT33vMHfM859X5Ej5QYRwUA1yv+3fJACidBMeUyFZRt9TjX2HXdi3T6FHf8eUAg==}
+
+  '@types/node@22.12.0':
+    resolution: {integrity: sha512-Fll2FZ1riMjNmlmJOdAyY5pUbkftXslB5DgEzlIuNaiWhXd00FhWxVC/r4yV/4wBb9JfImTu+jiSvXTkJ7F/gA==}
+
+  moji@0.5.1:
+    resolution: {integrity: sha512-xYylXOjBS9mE/d690InK3Y74NpE0El0TmAKDmKJveWk9jds/0Tl7MQP4yhavS0U64diEq+5ey2905nhCpIHE+Q==}
+
+  object-assign@3.0.0:
+    resolution: {integrity: sha512-jHP15vXVGeVh1HuaA2wY6lxk+whK/x4KBG88VXeRma7CCun7iGD5qPc4eYykQ9sdQvg8jkwFKsSxHln2ybW3xQ==}
+    engines: {node: '>=0.10.0'}
+
+  undici-types@6.20.0:
+    resolution: {integrity: sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==}
+
+snapshots:
+
+  '@types/moji@0.5.3': {}
+
+  '@types/node@22.12.0':
+    dependencies:
+      undici-types: 6.20.0
+
+  moji@0.5.1:
+    dependencies:
+      object-assign: 3.0.0
+
+  object-assign@3.0.0: {}
+
+  undici-types@6.20.0: {}
