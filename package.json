@@ -7,7 +7,9 @@
     "./cspell": "./cspell-ext.json",
     "./cspell-ext.json": "./cspell-ext.json"
   },
-  "scripts": {},
+  "scripts": {
+    "build": "tsx ./build.ts"
+  },
   "keywords": [
     "cspell"
   ],
