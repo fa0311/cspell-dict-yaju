@@ -8,7 +8,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "tsx ./build.ts"
+    "build": "tsx ./src/main.ts"
   },
   "keywords": [
     "cspell"
@@ -21,7 +21,8 @@
   "devDependencies": {
     "@types/node": "^22.12.0",
     "moji": "^0.5.1",
-    "@types/moji": "^0.5.3"
+    "@types/moji": "^0.5.3",
+    "tsx": "^4.19.2"
   },
   "dependencies": {}
 }
