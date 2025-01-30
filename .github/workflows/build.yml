@@ -4,9 +4,8 @@ on:
   push:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
+  pull-requests: write
 
 jobs:
   build:
