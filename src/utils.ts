@@ -23,8 +23,9 @@ const symbolNormalize = (x: string) => {
     x.replaceAll("ー", "").replaceAll("～", ""),
     x.toString().replaceAll("、", ""),
     x.toString().replaceAll("、", ""),
-
-    x.replaceAll(".", "。"),
+    x.replaceAll(".", "・"),
+    x.replaceAll("・", "."),
+    x.replaceAll(".", "").replaceAll("・", ""),
     x.replaceAll("！", "!"),
     x.replaceAll("!", "").replaceAll("！", ""),
 
@@ -62,6 +63,7 @@ export const $ = (text: string | string[], config?: Config) => {
       text,
       ...(kana ? kanaNormalize(text.toString()) : []),
       ...(symbol ? symbolNormalize(text.toString()) : []),
+      ...(kana && symbol ? kanaNormalize(text.toString()).flatMap((x) => symbolNormalize(x)) : []),
     ];
     return [...new Set(list.map((str) => `!${str}`))];
   });
@@ -98,6 +100,6 @@ export const matrix = (...texts: (string | string[])[]): string[] => {
 };
 
 export const output = (file: string) => {
-  const data = list.join("\n");
+  const data = [...new Set(list)].join("\n");
   fs.writeFileSync(file, data, "utf8");
 };

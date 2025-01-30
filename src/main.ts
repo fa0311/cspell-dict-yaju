@@ -528,7 +528,8 @@ $("ヤジュウセンパイ", { kana: true });
 $("やじゅう", { kana: true });
 $("yaju", { kana: true });
 $("YAJ&U", { kana: true });
-$("ビースト", { kana: true });
+$("ビースト", { kana: true, symbol: false });
+$("びーすと", { kana: true, symbol: false });
 $("Beast", { kana: true });
 $("TDK", { kana: true });
 $("YJSNPI", { kana: true });
@@ -561,7 +562,7 @@ $("ひで");
 $("虐待おじさん");
 $("COAT", { kana: true });
 $("acceed", { kana: true });
-$("アクシード", { kana: true });
+$("アクシード", { kana: true, symbol: false });
 $("ゆうさく");
 
 $("菅野美穂");
